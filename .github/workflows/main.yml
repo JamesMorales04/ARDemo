@@ -35,7 +35,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ./Library
-          key: Library-test-project-WebGL
+          key: Library-test-project-Android
 
       # Test
       - name: Run tests
@@ -48,7 +48,7 @@ jobs:
         uses: game-ci/unity-builder@v2
         with:
           projectPath: .
-          targetPlatform: WebGL
+          targetPlatform: Android
 
       # Output
       - uses: actions/upload-artifact@v2
